@@ -32,15 +32,13 @@
 
         :root {
             --bg-color: #ffffff;
-            --pure-white: #ffffff;
+            --pure-white: #f8f5f5;
             --text-primary: #151515;
             --text-secondary: rgb(19, 19, 19);
             --border-light: #e8e5df;
-            --gold-accent: #d69b1a;;
+            --gold-accent: #d69b1a;
             --gold-subtle: #e0c883;
             --drawer-width: 280px;
-           
-            
         }
 
         body {
@@ -59,7 +57,7 @@
             text-decoration: none;
             color: inherit;
         }
-/* PRELOADER SPLASH SCREEN */
+
 .preloader {
     position: fixed;
     top: 0;
@@ -116,7 +114,7 @@
 .site-content.visible {
     opacity: 1;
 }
-        /* HEADER */
+      
         .mabu-header {
             position: sticky;
             top: 0;
@@ -229,23 +227,23 @@
             border-bottom: 1px solid var(--border-light);
         }
 
-        /* For continuous rolling (always) */
-.drawer-logo {
-    font-size: 1.5rem;
-    letter-spacing: 3px;
-    color: black;
-    animation: roll 3s infinite linear;
-}
+                /* For continuous rolling (always) */
+        .drawer-logo {
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+            color: black;
 
-/* For hover rolling */
-.nav-logo-img:hover {
-    animation: roll 0.6s infinite linear;
-}
+        }
 
-@keyframes roll {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
+        /* For hover rolling */
+        .nav-logo-img:hover {
+            animation: roll 0.6s infinite linear;
+        }
+
+        @keyframes roll {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
 
 
         .close-drawer {
@@ -271,7 +269,7 @@
             padding: 0.5rem 0;
             font-weight: 500;
             padding: 0.5rem 0;
-            transition: colo 0.2s ease;
+            transition: color 0.2s ease;
             
         }
          .drawer-nav-links a:hover{
@@ -286,125 +284,125 @@
             color: black;
         }
 
-       /* HERO CAROUSEL - FULL WIDTH */
-/* HERO CAROUSEL - FULL WIDTH */
-.hero-carousel {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 0 2rem;
-    padding: 0;
-    position: relative;
-    overflow-x: hidden;
-}
+      
+        /* HERO CAROUSEL - FULL WIDTH */
+        .hero-carousel {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 0 2rem;
+            padding: 0;
+            position: relative;
+            overflow-x: hidden;
+        }
 
-.carousel-container {
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-    border-radius: 0;
-}
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-radius: 0;
+        }
 
-.carousel-slides {
-    display: flex;
-    transition: transform 0.4s ease-in-out;
-}
+        .carousel-slides {
+            display: flex;
+            transition: transform 0.4s ease-in-out;
+        }
 
-.carousel-slide {
-    flex: 0 0 100%;
-    position: relative;
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
-}
+        .carousel-slide {
+            flex: 0 0 100%;
+            position: relative;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+        }
 
-.carousel-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
 
-.carousel-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-    color: white;
-    padding: 2rem 1.5rem 1.5rem;
-    text-align: left;
-}
+        .carousel-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+            padding: 2rem 1.5rem 1.5rem;
+            text-align: left;
+        }
 
-.carousel-caption h3 {
-    font-size: clamp(1rem, 4vw, 1.5rem);
-    font-weight: 600;
-    letter-spacing: 2px;
-    margin-bottom: 0.3rem;
-}
+        .carousel-caption h3 {
+            font-size: clamp(1rem, 4vw, 1.5rem);
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 0.3rem;
+        }
 
-.carousel-caption p {
-    font-size: clamp(0.7rem, 3vw, 0.85rem);
-    opacity: 0.9;
-    margin-bottom: 0.5rem;
-}
+        .carousel-caption p {
+            font-size: clamp(0.7rem, 3vw, 0.85rem);
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
 
-.caption-price {
-    display: inline-block;
-    font-size: clamp(0.9rem, 4vw, 1.2rem);
-    font-weight: 700;
-    background: #b89a5b;
-    padding: 0.2rem 1rem;
-    border-radius: 30px;
-    letter-spacing: 1px;
-}
+        .caption-price {
+            display: inline-block;
+            font-size: clamp(0.9rem, 4vw, 1.2rem);
+            font-weight: 700;
+            background: #b89a5b;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            letter-spacing: 1px;
+        }
 
-.caption-price.sold {
-    background: #838181;
-}
+        .caption-price.sold {
+            background: #838181;
+        }
 
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.6);
-    color: white;
-    border: none;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: 0.2s;
-    z-index: 10;
-}
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.6);
+            color: white;
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: 0.2s;
+            z-index: 10;
+        }
 
-.carousel-btn:hover {
-    background: var(--gold-accent);
-}
+        .carousel-btn:hover {
+            background: var(--gold-accent);
+        }
 
-.prev { left: 15px; }
-.next { right: 15px; }
+        .prev { left: 15px; }
+        .next { right: 15px; }
 
-.carousel-dots {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 1rem;
-}
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 1rem;
+        }
 
-.carousel-dots span {
-    width: 8px;
-    height: 8px;
-    background: #c0bcb4;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.2s;
-}
+        .carousel-dots span {
+            width: 8px;
+            height: 8px;
+            background: #c0bcb4;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.2s;
+        }
 
-.carousel-dots span.active {
-    background: var(--gold-accent);
-    width: 20px;
-    border-radius: 4px;
-}
+        .carousel-dots span.active {
+            background: var(--gold-accent);
+            width: 20px;
+            border-radius: 4px;
+        }
 
 /* Mobile fix for arrows */
 @media (max-width: 768px) {
@@ -548,7 +546,7 @@
         }
 .highlight {
     font-weight: 600;
-    color: #d19514;;
+    color: #d19514;
 }
         .cta-ring-btn {
             background:var(--gold-accent);
@@ -721,7 +719,7 @@
             transform: scale(1.05);
         }
 
-        /* VIEW MORE BUTTON */
+       
        .view-more-wrapper {
     text-align: center;
     padding: 8rem 5%;
@@ -753,8 +751,7 @@
     color: white;
     letter-spacing: 4px;
 }
-
-        /* MODAL */
+ 
         .modal {
             display: none;
             position: fixed;
@@ -803,7 +800,7 @@
         }
         
 
-        /* FOOTER */
+       
         .footer {
             padding: 5rem 5%;
             display: flex;
@@ -840,7 +837,13 @@
             
         }
         
-        /* WHATSAPP FLOAT */
+        .social-btn:hover {
+           animation: roll 0.6s infinite linear;
+            color: var(--gold-subtle);
+            
+        }
+        
+        
         .whatsapp-float {
             position: fixed;
             bottom: 20px;
@@ -871,6 +874,8 @@
             border-top: 1px solid var(--border-light);
             background: #fff;
         }
+       
+
 @media (max-width: 768px) {
     .desktop-nav { display: none; }
     .hamburger { display: block; }
@@ -900,7 +905,7 @@
     }
     
     .carousel-btn {
-        top: 45%;  /* Adjust position */
+        top: 45%;  
         width: 28px;
         height: 28px;
         font-size: 0.8rem;
@@ -918,20 +923,19 @@
     
 </head>
 <body>
-<!-- PRELOADER SPLASH SCREEN -->
+
 <div class="preloader" id="preloader">
     <div class="preloader-content">
-        <img src="mabu-logo.png" class="preloader-logo" alt="MABU">
+        <img src="mabu-logo.png" class="preloader-logo" alt="MABU logo">
         <div class="preloader-text">MABU WATCHES</div>
        
     </div>
 </div>
-<!-- MAIN SITE CONTENT (wrap everything in this div) -->
 <div class="site-content" id="siteContent">
 <header class="mabu-header">
     <div class="nav-container">
         <div class="header-left">
-            <img src="mabu-logo.png" class="nav-logo-img" alt="MABU">
+            <img src="mabu-logo.png" class="nav-logo-img" alt="MABU logo">
             <div class="nav-logo-text serif">MABU</div>
         </div>
         <nav class="desktop-nav">
@@ -940,7 +944,7 @@
             <a href="#collection">Watches</a>
             <a href="#championship-ring">Commission</a>
         </nav>
-        <button class="hamburger" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+        <button class="hamburger" id="menuToggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
     </div>
 </header>
 
@@ -948,7 +952,7 @@
 <div class="nav-drawer" id="navDrawer">
     <div class="drawer-header">
         <span class="drawer-logo serif">MABU</span>
-        <button class="close-drawer" id="closeDrawerBtn"><i class="fa-regular fa-circle-xmark"></i></button>
+        <button class="close-drawer" id="closeDrawerBtn" aria-label="Close navigation menu"><i class="fa-regular fa-circle-xmark"></i></button>
     </div>
     <div class="drawer-nav-links">
         <a href="#home">Home</a>
@@ -963,12 +967,12 @@
 </div>
 
 <main>
-    <!-- WATCH CAROUSEL SLIDESHOW - TOP OF PAGE -->
+   
     <div class="hero-carousel" id="home">
         <div class="carousel-container">
             <div class="carousel-slides" id="carouselSlides">
                 <div class="carousel-slide">
-                    <img src="daydate ice.jpeg" alt="Rolex Day-Date">
+                    <img src="daydate-ice.jpeg" alt="Rolex Day-Date watch with diamond baguette markers">
                     <div class="carousel-caption">
                         <h3>ROLEX DAY-DATE</h3>
                         <p>Platinum with Diamond Baguette Markers</p>
@@ -976,7 +980,7 @@
                     </div>
                 </div>
                 <div class="carousel-slide">
-                    <img src="Rolex yatch.jpeg" alt="Rolex Yacht-Master">
+                    <img src="Rolex-yacht.jpeg" alt="Rolex Yacht-Master 42 diamond set watch">
                     <div class="carousel-caption">
                         <h3>ROLEX YACHT-MASTER</h3>
                         <p>42mm | Factory Diamond Set</p>
@@ -984,7 +988,7 @@
                     </div>
                 </div>
                 <div class="carousel-slide">
-                    <img src="rolexgmt.jpeg" alt="Rolex GMT Master II">
+                    <img src="rolexgmt.jpeg" alt="Rolex GMT Master II watch with green and black bezel">
                     <div class="carousel-caption">
                         <h3>ROLEX GMT MASTER II</h3>
                         <p>Lefty "Sprite" Green/Black Bezel</p>
@@ -992,7 +996,7 @@
                     </div>
                 </div>
                 <div class="carousel-slide">
-                    <img src="piguest.jpeg" alt="Audemars Piguet">
+                    <img src="piguest.jpeg" alt="Audemars Piguet Royal Oak rose gold watch">
                     <div class="carousel-caption">
                         <h3>AUDEMARS PIGUET</h3>
                         <p>Royal Oak | Rose Gold</p>
@@ -1000,7 +1004,7 @@
                     </div>
                 </div>
                 <div class="carousel-slide">
-                    <img src="datewatch.jpeg" alt="Rolex Datejust">
+                    <img src="datewatch.jpeg" alt="Rolex Datejust 36 watch with blue sunbeam diamond dial">
                     <div class="carousel-caption">
                         <h3>ROLEX DATEJUST 36</h3>
                         <p>Blue Sunbeam Diamond Dial</p>
@@ -1022,21 +1026,21 @@
         </p>
     </section>
 
-    <!-- RING VIDEO + IMAGES (REDUCED SIZE) -->
+
     <div class="media-container">
         <div class="media-item">
             <video autoplay muted loop playsinline>
-                <source src="video-1.mp4.mp4" type="video/mp4">
+                <source src="video-1.mp4" type="video/mp4">
             </video>
         </div>
         <div class="media-item slider-box">
             <div class="slider" id="imageSlider">
-                <div class="slide"><img src="champ-1.jpg" alt="ring"></div>
-                <div class="slide"><img src="intunezwetrust-2.jpg" alt="ring"></div>
-                <div class="slide"><img src="rings-4.jpg" alt="ring"></div>
-                <div class="slide"><img src="rings-3.jpg" alt="ring"></div>
-                <div class="slide"><img src="ring-5.jpg" alt="ring"></div>
-                <div class="slide"><img src="ringside-1.jpg" alt="ring"></div>
+                <div class="slide"><img src="champ-1.jpg" alt="Championship ring close-up"></div>
+                <div class="slide"><img src="intunezwetrust-2.jpg" alt="Ring engraved with In Tune We Trust"></div>
+                <div class="slide"><img src="rings-4.jpg" alt="Side view of luxury championship ring"></div>
+                <div class="slide"><img src="rings-3.jpg" alt="Diamond-set championship ring"></div>
+                <div class="slide"><img src="ring-5.jpg" alt="Custom championship ring design"></div>
+                <div class="slide"><img src="ringside-1.jpg" alt="Ring presentation photo"></div>
             </div>
             <div class="slider-dots" id="sliderDots"></div>
         </div>
@@ -1052,7 +1056,7 @@
     <!-- WATCH GRID -->
     <div class="watch-grid" id="watchGrid">
         <div class="watch-card">
-            <div class="watch-img-box"><img src="daydate ice.jpeg" alt="Rolex"></div>
+            <div class="watch-img-box"><img src="daydate-ice.jpeg" alt="Rolex Day-Date watch"></div>
             <div class="watch-info">
                 <h3>ROLEX</h3>
                 <p>Platinum Day-Date with diamond baguette Markers</p>
@@ -1064,7 +1068,7 @@
         </div>
 
         <div class="watch-card">
-            <div class="watch-img-box"><img src="Rolex yatch.jpeg" alt="Yacht-Master"></div>
+            <div class="watch-img-box"><img src="Rolex-yacht.jpeg" alt="Rolex Yacht-Master watch"></div>
             <div class="watch-info">
                 <h3>ROLEX YACHT-MASTER</h3>
                 <p>Yacht-Master 42 | Factory set 226679TBR</p>
@@ -1077,7 +1081,7 @@
 
         <div class="watch-card">
             <div class="sold-badge">SOLD</div>
-            <div class="watch-img-box"><img src="piguest.jpeg" alt="AP"></div>
+            <div class="watch-img-box"><img src="piguest.jpeg" alt="Audemars Piguet Royal Oak watch"></div>
             <div class="watch-info">
                 <h3>AUDEMARS PIGUET</h3>
                 <p>Royal Oak | Rose Gold</p>
@@ -1089,7 +1093,7 @@
         </div>
 
         <div class="watch-card">
-            <div class="watch-img-box"><img src="rolexgmt.jpeg" alt="GMT"></div>
+            <div class="watch-img-box"><img src="rolexgmt.jpeg" alt="Rolex GMT Master II watch"></div>
             <div class="watch-info">
                 <h3>ROLEX GMT MASTER II</h3>
                 <p>Lefty "Sprite" Green/Black bezel</p>
@@ -1101,7 +1105,7 @@
         </div>
 
         <div class="watch-card">
-            <div class="watch-img-box"><img src="land dweller.jpeg" alt="Land Dweller"></div>
+            <div class="watch-img-box"><img src="land-dweller.jpeg" alt="Rolex Land Dweller watch"></div>
             <div class="watch-info">
                 <h3>ROLEX LAND DWELLER</h3>
                 <p>Custom White Honeycomb Dial</p>
@@ -1113,7 +1117,7 @@
         </div>
 
         <div class="watch-card">
-            <div class="watch-img-box"><img src="datewatch.jpeg" alt="Datejust"></div>
+            <div class="watch-img-box"><img src="datewatch.jpeg" alt="Rolex Datejust 36 watch"></div>
             <div class="watch-info">
                 <h3>ROLEX DATEJUST 36</h3>
                 <p>Blue sunbeam Diamond Dial</p>
@@ -1160,20 +1164,20 @@
             <li>+44 7376 085908</li>
             <li>London, UK</li>
         </ul>
-        <a href="https://instagram.com/mabuwatches" class="social-btn" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.facebook.com/share/1G2mh9g4EE/?mibextid=wwXIfr" class="social-btn" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com/mabuwatches" class="social-btn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/1G2mh9g4EE/?mibextid=wwXIfr" class="social-btn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
     </div>
 </footer>
 
 <div class="copyright">
-    © 2026 Mabu Watches Ltd. design by <a href="https://noahayo.com.ng" style="color:var(--gold-accent);">Noah Ayo</a>
+© 2026 Mabu Watches Ltd. design by <a href="https://noahayo.com.ng" style="color:var(--gold-accent);">Noah Ayo</a>
 </div>
 
-<a href="https://wa.me/447376085908" class="whatsapp-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://wa.me/447376085908" class="whatsapp-float" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
 
 <div id="enquiryModal" class="modal">
     <div class="modal-content">
-        <span class="close-modal" onclick="closeEnquiry()">&times;</span>
+        <span class="close-modal" role="button" aria-label="Close enquiry modal" onclick="closeEnquiry()">&times;</span>
         <h2 class="serif">Enquiry</h2>
         <form id="enquiryForm">
             <select id="enquiryType" required>
@@ -1340,11 +1344,14 @@ if (enquiryForm) {
     enquiryForm.onsubmit = function(e) {
         e.preventDefault();
         
+        const enquiryType = document.getElementById('enquiryType').value;
         const item = document.getElementById('itemName').value;
         const name = document.getElementById('userName').value;
+        const email = document.getElementById('userEmail').value;
+        const phone = document.getElementById('userPhone').value;
         const msg = document.getElementById('userMsg').value;
         
-        const text = `Hello MABU!%0A%0AName: ${name}%0AItem: ${item}%0AMessage: ${msg}`;
+        const text = encodeURIComponent(`Hello MABU!\n\nEnquiry Type: ${enquiryType || 'Not specified'}\nName: ${name}\nEmail: ${email || 'Not provided'}\nPhone: ${phone || 'Not provided'}\nItem: ${item || 'Not specified'}\nMessage: ${msg}`);
         
         window.open(`https://wa.me/447376085908?text=${text}`, '_blank');
         
